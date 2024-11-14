@@ -1,0 +1,36 @@
+.nav {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__item {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__ham {
+    display: none;
+  }
+
+  @include mobile() {
+    &__ham {
+      display: block;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    .btn {
+      display: none;
+    }
+  }
+}

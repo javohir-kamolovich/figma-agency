@@ -1,0 +1,135 @@
+.teammate {
+  padding: 0;
+  margin: 150px 0;
+
+  &__sup {
+    font-size: 24px;
+    font-weight: 600;
+    color: #377dff;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__dotts-orange {
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    z-index: -1;
+  }
+
+  &__dotts-pink {
+    position: absolute;
+    top: 347px;
+    left: 533px;
+    z-index: -1;
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #464646;
+    margin-bottom: 24px;
+  }
+
+  &__desc2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #464646;
+    margin-bottom: 24px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__btn-second {
+    border: none;
+    background-color: transparent;
+  }
+
+  &__desc-mobile {
+    display: none;
+  }
+
+  @include mobile() {
+    &__wrapper {
+      flex-direction: column-reverse;
+      position: relative;
+    }
+
+    &__sup {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &__btn-wrapper {
+      justify-content: center;
+    }
+
+    &__desc2 {
+      display: none;
+    }
+
+    &__desc {
+      font-family: Quicksand;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      justify-content: center;
+    }
+
+    &__desc-mobile {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    .hero__btn {
+      padding: 10px 35px;
+    }
+
+    .btn {
+      padding: 10px 35px;
+    }
+
+    &__dotts-orange {
+      display: none;
+    }
+
+    &__dotts-pink {
+      position: absolute;
+      top: 355px;
+      left: 5px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.collaboration {
+  margin-bottom: 150px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__dotts {
+    position: absolute;
+    top: 117px;
+    right: 501px;
+    z-index: -1;
+  }
+
+  &__dotts-orange {
+    position: absolute;
+    bottom: -15px;
+    right: 83.8px;
+    z-index: -1;
+  }
+
+  &__title {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 75.02px;
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #464646;
+    margin: 25px 0 0 0;
+  }
+
+  &__image {
+    position: absolute;
+    top: 155px;
+    right: 262px;
+  }
+
+  @include mobile() {
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+
+    &__dotts {
+      display: none;
+    }
+
+    &__dotts-orange {
+      display: none;
+    }
+
+    &__title {
+      margin-top: 162px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 36.4px;
+    }
+
+    &__main {
+      display: none;
+    }
+
+    &__btn {
+      margin-left: 70px;
+    }
+  }
+}

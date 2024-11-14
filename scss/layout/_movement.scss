@@ -1,0 +1,91 @@
+.movement {
+  margin-bottom: 150px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 154px;
+  }
+
+  &__sup {
+    font-size: 24px;
+    font-weight: 600;
+    color: #377dff;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-size: 55px;
+    font-weight: 700;
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #464646;
+    margin: 18px 0 36px 0;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 41px;
+  }
+
+  &__card {
+    text-align: center;
+    width: 262px;
+    border-radius: 30px;
+    border: 1px solid #d6d6d6;
+  }
+
+  &__img {
+    margin-top: 35px;
+  }
+
+  &__text {
+    margin: 32px 0 34px 0;
+  }
+
+  @include mobile() {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+
+      text-align: center;
+    }
+
+    &__cards {
+      flex-direction: column;
+      display: block;
+      margin-top: -80px;
+    }
+
+    &__card {
+      margin-bottom: 35px;
+    }
+
+    &__main-br {
+      display: none;
+    }
+
+    &__sup {
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+}
